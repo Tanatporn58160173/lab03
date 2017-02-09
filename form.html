@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tanatporn'Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>CREAM's Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="lab03.html">❥ Home</a></li>
+                    <li><a href="bootstrap.html">❥ การใช้งาน Grid ใน Bootstrap</a></li>
+                    <li class="active"><a href="form.html">❥ การใช้งาน Form ใน Bootstrap</a></li>
+
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-9">
+
+                <hr>
+                <h2>การใช้งาน Form ใน Bootstrap</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Tanatporn Ngamkasaemsup, Feb 1, 2017.</h5>
+                <h5><span class="label label-success">Form</span> <span class="label label-primary">Bootsrap</span></h5><br>
+                <p style="text-indent: 2.5em;">
+                    <h4>รูปแบบการควบคุมโดยอัตโนมัติได้รับจัดแต่งทรงผมระดับโลกบางคนที่มี Bootstrap : ต้นฉบับเดิมทั้งหมด
+                        <\input> ,
+                            <\textarea> และ
+                                <\select> องค์ประกอบที่มีระดับ .form-control มีความกว้าง 100%<br><br> Bootstrap ให้สามประเภทของการจัดรูปแบบ:</p><br>
+                <p style="text-indent: 2.5em;">• รูปแบบแนวตั้ง (ค่าเริ่มต้น)</p><br>
+                <p style="text-indent: 2.5em;">• รูปแบบแนวนอน</p><br>
+                <p style="text-indent: 2.5em;">• รูปแบบอินไลน์ (บรรทัดเดียวกัน)<br><br></p>
+                กฎระเบียบมาตรฐานสำหรับทั้งสามรูปแบบรูปแบบ:<br><br>
+
+                <p style="text-indent: 2.5em;">- มักจะใช้
+                    <\form role="form"> (ช่วยปรับปรุงการเข้าถึงสำหรับผู้ที่ใช้โปรแกรมอ่านหน้าจอ)</p><br>
+                <p style="text-indent: 2.5em;">- ห่อป้ายชื่อและรูปแบบการควบคุมใน
+                    <\div class="form-group"> (จำเป็นสำหรับระยะห่างที่เหมาะสม)</p><br>
+                <p style="text-indent: 2.5em;">- เพิ่มระดับ .form-control เพื่อต้นฉบับเดิมทั้งหมด
+                    <\input> ,
+                        <\textarea> และ
+                            <\select> องค์ประกอบ</p><br>
+                </h4>
+                <hr>
+                <h4>
+                    <U><B>BOOTSTRAP แนวตั้งแบบฟอร์ม (เริ่มต้น)</B></U><br><br>ตัวอย่าง
+                    <center><img src="pic/19.PNG"></center><br> ผลลัพธ์ที่ได้
+                    <br><br>
+                    <center><img src="pic/20.PNG"></center>
+                </h4><br>
+
+                <h4>
+                    <U><B>BOOTSTRAP แบบแนวนอน</B></U><br><br> รูปแบบแนวนอนยืนห่างจากรูปแบบอื่น ๆ ทั้งในจำนวนของมาร์กอัปและในการนำเสนอรูปแบบ กฎระเบียบเพิ่มเติมสำหรับรูปแบบแนวนอน : - เพิ่มระดับ .form-horizontal ไป
+                    <\form> องค์ประกอบ - เพิ่มระดับ .control-label ทุก
+                        <\label> องค์ประกอบ<br><br> ตัวอย่าง
+                            <br>
+                            <center><img src="pic/21.PNG"></center><br> ผลลัพธ์ที่ได้
+                            <br>
+                            <center><img src="pic/22.PNG"></center><br>
+
+                            <h4>
+                                <U><B>BOOTSTRAP แบบอินไลน์(บรรทัดเดียวกัน)</B></U><br><br> ในรูปแบบอินไลน์ทั้งหมดขององค์ประกอบที่เป็นแบบอินไลน์ซ้ายชิดและป้ายชื่อที่มีข้าง
+
+                                <br><br> ตัวอย่าง
+                                <center><img src="pic/23.PNG"></center><br> ผลลัพธ์ที่ได้
+                                <br>
+                                <center><img src="pic/24.PNG"></center><br>
+
+</body>
+
+</html>
