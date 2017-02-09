@@ -17,7 +17,7 @@
         /* Set gray background color and 100% height */
         
         .sidenav {
-            background-color: #f1f1f1;
+            background-color: #FDDD8A;
             height: 100%;
         }
         /* Set black background color, white text and some padding */
@@ -70,32 +70,133 @@
                 <h2>การใช้ Grid ใน Bootstrap</h2>
                 <h5><span class="glyphicon glyphicon-time"></span> Post by Tanatporn Ngamkasaemsup, Feb 1, 2017.</h5>
                 <h5><span class="label label-danger">Grid</span> <span class="label label-primary">Bootsrap</span></h5><br>
-                
-          
 
-                <hr>
-                <h2>การสร้าง Grid system</h2>
-                <h5><span class="glyphicon glyphicon-time"></span> Post by Tanatporn Ngamkasaemsup, Feb 1, 2017.</h5>
-                <!--h5><span class="label label-success">Lorem</span></h5--><br>
-                <p>1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา โดยในที่นี้คือเราจะใช้คลาส container<br>
-
-                2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container" โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้ class="container"<br>
-
-                3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system แบ่งออกเป็น 4 ประเภทคือ</p>
-                <hr>
-
-                <h4>Leave a Comment:</h4>
-                <form role="form">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
-                </form>
+                <p>
+                    <h3><b><u>Grid System คืออะไร ?</u></b></h3><br></p>
+                <h4> ถ้าพูดกันแบบบ้านๆ ทั่วไปเราก็คงจะบอกว่าเป็น Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap
+                    เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น ดังภาพ</h4>
                 <br><br>
-    <footer class="container-fluid">
-        <p> © 58160173 Tanatporn Ngamkasaemsup</p>
-    </footer>
+                <img src="pic/1.PNG"><br><br>
+                <p>
+                    <h4>ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ อย่างเช่น</h4>
+                </p><br><br>
+                <img src="pic/2.PNG"><br><br>
 
+                <p>
+                    <h3>
+                        <B><U>การสร้าง Grid บน Bootstrap</U></B>
+                    </h3>
+                </p><br>
+                <!--img src = "pic/Bootstrap.PNG"-->
+                <p>
+                    <h4>
+                        <B>ขั้นตอนที่ 1</B> copy โฟลเดอร์ทั้งหมด และ ไฟล์ index.html ตอนที่สร้างใน Chapter 1 ทั้งหมดมาใส่โฟลเดอร์ใหม่ของเรา (ในที่นี้ตั้งชื่อโฟลเดอร์ว่า chapter_2) ดังรูป</h4>
+                </p><br>
+                <center><img src="pic/8.PNG"></center><br>
+
+                <p>
+                    <h4>
+                        <B>ขั้นตอนที่ 2</B> เปลี่ยน title ในไฟล์ index.html เป็น "Grid System" และลบแท็ก h1 ที่อยู่ใน body ออก โดยโค้ดผลลัพธ์ของไฟล์ index.html แสดงดังโค้ดด้านล่าง</h4>
+                </p><br>
+                <center><img src="pic/9.PNG"></center><br>
+
+                <p>
+                    <h4>
+                        <B>ขั้นตอนที่ 3</B> ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ
+                        ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา โดยในที่นี้คือเราจะใช้คลาส container</h4>
+                </p><br>
+                <center><img src="pic/10.PNG"></center><br>
+
+                <p>
+                    <h4>ถัดมาเราจะต้องสร้างแถวโดยใช้ class="row" ภายใต้ class="container" โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้ class="container"</h4>
+                </p><br>
+                <center><img src="pic/11.PNG"></center><br>
+
+                <p>
+                    <h4>
+                        <B>ขั้นตอนที่ 4</B>ในแต่ละแถวของ Grid system นั้น Bootstrap ได้กำหนดให้สามารถที่คอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system แบ่งออกเป็น 4 ประเภทคือ - col-xs-int ใช้สำหรับการแสดงผลบนขนาดหน้าจอที่
+                        < 768 px - col-sm-int ใช้สำหรับการแสดงผลบนขนาดหน้าจอที่>= 768 px - col-md-int ใช้สำหรับการแสดงผลบนขนาดหน้าจอที่ >= 992 px - col-lg-int ใช้สำหรับการแสดงผลบนขนาดหน้าจอที่ >= 1200 px โดยที่ "int" คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา ตัวอย่างเช่น เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่
+                            >= 768 px เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้
+                            <center><img src="pic/12.PNG"></center><br> และผลลัพธ์ดังกล่าวแสดงดังรูป
+                            <center><img src="pic/13.PNG"></center><br>
+
+                            <p>
+                                <h4>
+                                    <B>ขั้นตอนที่ 5</B>นอกจากนี้เราสามารถกำหนดสีพิ้นหลังให้กับพื้นหลังในแต่ละคอลัมน์โดยใช้ CSS โดยให้เราสร้างไฟล์ styles.css ไว้ในโฟลเดอร์ "CSS" </p><br>
+                            <center><img src="pic/14.PNG"></center><br> ถัดมาในไฟล์ index.html ให้เราเรียกไฟล์ css ของเราที่เพิ่งสร้างขึ้นมา
+                            <center><img src="pic/15.PNG"></center><br> ต่อมาให้เรากำหนดคลาสของพื้นหลังให้กับแต่ละคอลัมน์ดังนี้
+                            <center><img src="pic/16.PNG"></center><br> โดยผลลัพธ์ถูกแสดงดังรูป
+                            </h4>
+                            <center><img src="pic/17.PNG"></center><br>
+
+
+                            <p>
+                                <h4>
+                                    <B>ขั้นตอนที่ 6 </B>เราลองกำหนดการแสดงผลเนื้อหาบนมือถือและแท็บแล็บของเราบ้างนะครับ โดยส่วนขนาดหน้าจอของมือถือและแท็บแล็บจะมีความกว้าง
+                                    < 768 px ดังนั้นเราจำเป็นต้องใช้ class="col-xs" ซึ่งในตัวอย่างนี้เราจะให้แสดงผลแค่คอลัมน์เดียวบนอุปกรณ์ดังกล่าว</h4>
+                            </p><br>
+                            <center><img src="pic/18.PNG"></center><br>
+                            <hr>
+                            <h2>การใช้งาน Form ใน Bootstrap</h2>
+                            <h5><span class="glyphicon glyphicon-time"></span> Post by Tanatporn Ngamkasaemsup, Feb 1, 2017.</h5>
+                            <h5><span class="label label-success">Form</span> <span class="label label-primary">Bootsrap</span></h5><br>
+                            <p style="text-indent: 2.5em;">
+                                <h4>รูปแบบการควบคุมโดยอัตโนมัติได้รับจัดแต่งทรงผมระดับโลกบางคนที่มี Bootstrap : ต้นฉบับเดิมทั้งหมด
+                                    <\input> ,
+                                        <\textarea> และ
+                                            <\select> องค์ประกอบที่มีระดับ .form-control มีความกว้าง 100%<br><br> Bootstrap ให้สามประเภทของการจัดรูปแบบ:</p><br>
+                            <p style="text-indent: 2.5em;">• รูปแบบแนวตั้ง (ค่าเริ่มต้น)</p><br>
+                            <p style="text-indent: 2.5em;">• รูปแบบแนวนอน</p><br>
+                            <p style="text-indent: 2.5em;">• รูปแบบอินไลน์ (บรรทัดเดียวกัน)<br><br></p>
+                            กฎระเบียบมาตรฐานสำหรับทั้งสามรูปแบบรูปแบบ:<br><br>
+
+                            <p style="text-indent: 2.5em;">- มักจะใช้
+                                <\form role="form"> (ช่วยปรับปรุงการเข้าถึงสำหรับผู้ที่ใช้โปรแกรมอ่านหน้าจอ)</p><br>
+                            <p style="text-indent: 2.5em;">- ห่อป้ายชื่อและรูปแบบการควบคุมใน
+                                <\div class="form-group"> (จำเป็นสำหรับระยะห่างที่เหมาะสม)</p><br>
+                            <p style="text-indent: 2.5em;">- เพิ่มระดับ .form-control เพื่อต้นฉบับเดิมทั้งหมด
+                                <\input> ,
+                                    <\textarea> และ
+                                        <\select> องค์ประกอบ</p><br>
+                            </h4>
+                            <hr>
+                            <h4>
+                                <U><B>BOOTSTRAP แนวตั้งแบบฟอร์ม (เริ่มต้น)</B></U><br><br>ตัวอย่าง
+                                <center><img src="pic/19.PNG"></center><br> ผลลัพธ์ที่ได้
+                                <br><br>
+                                <center><img src="pic/20.PNG" weight="200px"></center>
+                            </h4><br>
+
+                            <h4>
+                                <U><B>BOOTSTRAP แบบแนวนอน</B></U><br><br> รูปแบบแนวนอนยืนห่างจากรูปแบบอื่น ๆ ทั้งในจำนวนของมาร์กอัปและในการนำเสนอรูปแบบ กฎระเบียบเพิ่มเติมสำหรับรูปแบบแนวนอน : - เพิ่มระดับ .form-horizontal ไป
+                                <\form> องค์ประกอบ - เพิ่มระดับ .control-label ทุก
+                                    <\label> องค์ประกอบ<br><br> ตัวอย่าง
+                                        <br>
+                                        <center><img src="pic/21.PNG"></center><br> ผลลัพธ์ที่ได้
+                                        <br>
+                                        <center><img src="pic/22.PNG"></center><br>
+
+                                        <h4>
+                                            <U><B>BOOTSTRAP แบบอินไลน์(บรรทัดเดียวกัน)</B></U><br><br> ในรูปแบบอินไลน์ทั้งหมดขององค์ประกอบที่เป็นแบบอินไลน์ซ้ายชิดและป้ายชื่อที่มีข้าง
+
+                                            <br><br> ตัวอย่าง
+                                            <center><img src="pic/23.PNG"></center><br> ผลลัพธ์ที่ได้
+                                            <br>
+                                            <center><img src="pic/24.PNG"></center><br>
+
+                                            <h4>Leave a Comment:</h4>
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="3" required></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Submit</button>
+                                            </form>
+                                            <br><br>
+                                            <footer class="container-fluid">
+                                                <p> © 58160173 Tanatporn Ngamkasaemsup</p>
+                                            </footer>
+
+                </p>
 
 </body>
 
